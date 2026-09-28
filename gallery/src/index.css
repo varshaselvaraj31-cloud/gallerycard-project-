@@ -1,0 +1,108 @@
+/* Core Page Theme Layout Configuration Setting */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0f172a; /* Sleek Dark Theme slate-900 background colour format */
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Main Global Content Center Wrapper Grid View Box */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Elegant Modern Luxury Title Header Brand View */
+.site-header {
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.brand {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+/* Section Header Typography Configuration Styles */
+.category-section {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Professional Advanced Grid Card Responsive Matrix Configuration */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .brand {
+    font-size: 2rem;
+  }
+}
+
+/* Beautiful Interactive CSS Object Card Framework Graphic Node Design Component UI */
+.image-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease-in-out;
+}
+
+.image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+}
+
+/* ⚠️ ROMBA MUKKIYAM: Image explicit dimension constraints layout renderer fix */
+.image-card__image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover; /* Images crop ratio proper scale alignment preserve pattern */
+  display: block;
+  background-color: #334155; /* Local fallback placeholder skeleton load point animation grid system */
+}
+
+/* Metadata Typography Text Wrapper Container Pad Blocks Styles UI layout */
+.image-card__content {
+  padding: 1.25rem;
+}
+
+.image-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0 0 0.5rem 0;
+}
+
+.image-card__description {
+  font-size: 0.925rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
